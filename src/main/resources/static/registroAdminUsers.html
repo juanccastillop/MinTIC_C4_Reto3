@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="icon" type="image/png" href="assets/img/icon.jpg">
+   <title>Registro</title>
+
+   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+   <meta name="viewport" content="width=device-width" />
+   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <link href="assets/css/registroUser.css" rel="stylesheet" />
+</head>
+
+<body>
+   <div id="Registro">
+      <h3 class="text-center text-white pt-3">LA SARTEN POR EL MANGO</h3>
+      <div class="container">
+         <div class="col-sm-8">
+            <div class="Formulario">
+               <form action="javascript:guardarUsuarios()" id="formularioReg">
+                  <div class="tab-content">
+                     <div>
+                        <h3 class="info-text"> formulario de registro usuario nuevo</h3>
+                        <p >Por favor diligencie la siguiente información</p>
+                        <div class="col-sm-12 col-sm-offset-1">
+                           <div class="form-group">
+                              <label>Identificación<small>(obligatorio)</small></label>
+                              <input name="identification" id="identification" type="number" class="form-control">
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-sm-offset-1">
+                           <div class="form-group">
+                              <label>Nombres <small>(obligatorio)</small></label>
+                              <input name="name" id="name" type="text" class="form-control">
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-sm-offset-1">
+                           <div class="form-group">
+                              <label>Dirección <small>(obligatorio)</small></label>
+                              <input name="address" id="address" type="text" class="form-control">
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-sm-offset-1">
+                           <div class="form-group">
+                              <label>Telefono Celular <small>(obligatorio)</small></label>
+                              <input name="cellPhone" id="cellPhone" type="number" class="form-control">
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-sm-offset-1">
+                           <div class="form-group">
+                              <label>Correo Electronico <small>(obligatorio)</small></label>
+                              <input name="email" id="email" type="email" class="form-control">
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-sm-offset-1">
+                           <div class="form-group">
+                              <label>Zona<small>(obligatorio)</small></label>
+                              <select name="zone" id="zone" type="text" class="form-control" required autocomplete="off"
+                                 oninvalid="setCustomValidity('Seleccione una opción de la lista')"
+                                 oninput="setCustomValidity('')">
+                                 <option selected> </option>
+                                 <option value="ZONA 1">ZONA 1</option>
+                                 <option value="ZONA 2">ZONA 2</option>
+                                 <option value="ZONA 3">ZONA 3</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-sm-offset-1">
+                           <div class="form-group">
+                              <label>Tipo<small>(obligatorio)</small></label>
+                              <select name="type" id="type" type="text" class="form-control" required autocomplete="off"
+                                 oninvalid="setCustomValidity('Seleccione una opción de la lista')"
+                                 oninput="setCustomValidity('')">
+                                 <option selected> </option>
+                                 <option value="ADM">ADMINISTRADOR</option>
+                                 <option value="ASES">ASESOR COMERCIAL</option>
+                                 <option value="COORD">COORDINADOR</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-sm-offset-1">
+                           <div class="form-group">
+                              <label>Contraseña <small>(obligatorio)</small></label>
+                              <input name="password" id="password" type="password" class="form-control">
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-sm-offset-1">
+                           <div class="form-group">
+                              <label>Confirme su contraseña <small>(obligatorio)</small></label>
+                              <input name="password_confirm" id="password_confirm" type="password" class="form-control">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="wizard-footer height-wizard">
+                     <div class="btnReg">
+                        <input type="submit" class="btn btn-wd btn-sm" name="registrar" id="registrar"
+                           value="Registrar" />
+                     </div>
+                     <div class="footer">
+                        <p class="login-card-footer-text"><a href="PanelAdmin.html"
+                           class="text-reset">Volver al panel de Administración
+                        </p>
+                     </div>
+               </form>
+            </div>
+
+         </div>
+         <nav class="contacto-footer-nav text-center">
+            <a href="condicionesdeuso.html"><br> Pagina web desarrollada por Juan Carlos Castillo Pedreros - Mision TIC
+               - 2021</a>
+         </nav>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+      <script src="assets/js/traslateValidate.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="assets/js/RegistroUser.js"></script>
+   
+   </body>
+
+</html>

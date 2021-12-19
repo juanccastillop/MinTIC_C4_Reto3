@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/img/icon.jpg">
+    <title>La Sarten</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/Index.css" />   
+</head>
+
+<body>
+    <div id="login">
+        <h3 class="text-center text-white pt-3">LA SARTEN POR EL MANGO</h3>
+        <div class="container">
+            <div class="card login-card">
+                <div class="row no-gutters">
+                    <div class="col-md-5"><br><br>
+                        <p class="login-card-description">¡Bienvenido!</p>
+                        <div class="brand-wrapper">
+                            <img src="assets/img/logo.png" alt="logo" class="logo">
+                        </div>
+                    </div>
+                               
+                    
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <p class="login-card-description">Inicio de sesión</p>
+                            <form action="javascript:traerUsuarios()" id="formulario" name="form">
+                                <div class="form-group">
+                                    <i class="fas fa-envelope form-control-feedback" aria-hidden="true"></i>
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Correo Electronico" required>
+                                </div>
+                                <div class="form-group">
+                                    <i class="fas fa-lock form-control-feedback" aria-hidden="true"></i>
+                                    <input type="password" name="password" id="password" class="form-control"
+                                        placeholder="Ingrese contraseña" required>
+                                </div>
+                                <div class="form-group">
+                                    <a href="recordarcontraseña.html" class="forgot-password-link">Recordar
+                                        contraseña</a>
+                                </div>
+                                <div class="btnLog col-md-12">
+                                    <input name="login" id="login" class="btn btn-block btn-wd login-btn" type="submit"
+                                        value="ingresar">
+                                </div>
+                            </form>
+                            <p class="login-card-footer-text">¿No tienes cuenta? <a href="registroUser.html"
+                                    class="text-reset">Crea tu cuenta aquí­.
+                                    <i class="fas fa-arrow-circle-right"></i></a>
+                            </p>
+                            <div class="addthis_sharing_toolbox text-center">
+                                <script type="text/javascript"
+                                    src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ecc1a47193e29e4"
+                                    async="async"></script>
+                            </div>
+                            <nav class="login-card-footer-nav text-center">
+                                <a href="CondicionesUso.html"><br> Condiciones de uso </a>
+                                <a href="Politicas.html"><br> Políticas de privacidad </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="contacto-footer-nav text-center">
+            <a href="condicionesdeuso.html"><br> Pagina web desarrollada por Juan Carlos Castillo Pedreros - Reto 2 C4 - Mision TIC - 2021</a>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="assets/js/traslateValidate.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/Login.js"></script>
+
+
+
+</body>
+
+</html>
