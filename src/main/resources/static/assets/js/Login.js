@@ -58,9 +58,10 @@ function traerUsuarios() {
             }else{
                 let data = {
                     'id': response.id,
-                    'name' : response.name
+                    'name' : response.name,
+                    'zone' : response.zone
                 };
-                //Guardo los datos en un almacenamiento loca con el nombre de object_name y le envio los datos como js
+                //Guardo los datos en un almacenamiento local con el nombre de object_name y le envio los datos como js
                 localStorage.setItem("object_name", JSON.stringify(data));
 
                 swal("OK","Bienvenido " + data.name, "success");
@@ -68,9 +69,15 @@ function traerUsuarios() {
                 setTimeout(
                     function(){ 
                         $(document).ready(function(){
-                            $(location).attr('href',"PanelAdmin.html");
+                            if(response.type == 'ADM'){
+                                window.location.href = "PanelAdmin.html"           
+                            }else if (response.type == 'ASE'){
+                                window.location.href = "PanelAsesor.html"           
+                            }else if(response.type == 'COORD'){
+                                window.location.href = "PanelCoordinador.html" 
+                            }
                         });
-                    }, 1000
+                    }, 1300
                 );
 
                 }
