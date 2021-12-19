@@ -1,6 +1,7 @@
 package co.edu.usa.lasartenreto3.reto3_lasarten.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -39,6 +40,13 @@ public class UserController {
         return userService.getAll();
     }
 
+    /**
+    * Metodo post buscar por id de usuario
+    */
+    @GetMapping("/{id}")
+    public Optional<User> getUser(@PathVariable("id") int id) {
+    return userService.getUser(id);
+}
     /**
      * Metodo post para guardar usuario
      */
